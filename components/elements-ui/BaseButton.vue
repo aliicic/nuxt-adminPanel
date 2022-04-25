@@ -1,7 +1,8 @@
 <template>
 <button class="button is-fullwidth"
 :class ="{[`is-${color}`] : color ,
-['is-outlined'] : outlined
+['is-outlined'] : outlined,
+
 }"
 >
 <slot>click</slot>
@@ -20,16 +21,21 @@ export default {
     outlined : {
       type: Boolean,
       required: false,
-    }
+    },
+
+    // disabled : {
+    //   type: Boolean,
+    //   required: false,
+    // }
 
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 
-@import "bulma/sass/utilities/_all.sass";
-@import "bulma/sass/elements/button.sass";
+// @import "bulma/sass/utilities/_all.sass";
+// @import "bulma/sass/elements/button.sass";
 
 // .is-primary{
 
