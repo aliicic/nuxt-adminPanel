@@ -1,6 +1,8 @@
 <!-- Please remove this file from your project -->
 <template>
- <BaseButton />
+<div>
+ <BaseButton color="primary" outlined  >click me</BaseButton>
+</div>
 </template>
 
 <script>
