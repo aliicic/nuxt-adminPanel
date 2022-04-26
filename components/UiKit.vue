@@ -19,7 +19,7 @@
         <BaseButton disabled>click me</BaseButton>
       </div>
       <div class="column">
-        <BaseButton color="primary">click me</BaseButton>
+        <BaseButton icon="search" color="primary">click me</BaseButton>
       </div>
     </div>
 

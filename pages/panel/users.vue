@@ -4,7 +4,7 @@
     <div class="columns">
       <div class="column is-three-quarters">
         <BaseInput
-          color="primary"
+          
           icon="search"
           placeholder="search something"
         />
@@ -51,7 +51,8 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">add user</p>
+          <p v-if="addUserStatus" class="modal-card-title">Add User</p>
+          <p v-if="deleteUserStatus" class="modal-card-title">Delete User</p>
           <button
             class="delete"
             aria-label="close"
@@ -62,13 +63,13 @@
           <BaseInput
             icon="user"
             placeholder="name"
-            color="primary"
+
             v-model="user.name"
           />
           <BaseInput
             icon="envelope"
             placeholder="email"
-            color="primary"
+
             v-model="user.email"
           />
         </section>

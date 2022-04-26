@@ -1,46 +1,35 @@
 <template>
-<button class="button is-fullwidth"
-:class ="{[`is-${color}`] : color ,
-['is-outlined'] : outlined}"
-@click ="$emit('click',$event)"
->
-<slot>click</slot>
-</button>
+  <button
+    class="button is-fullwidth"
+    :class="{ [`is-${color}`]: color, ['is-outlined']: outlined }"
+    @click="$emit('click', $event)"
+  >
+    <span class="icon is-small" v-if="icon">
+      <i :class="`fas fa-${icon}`"></i>
+    </span>
+    <span>
+    <slot>click</slot>
+    </span>
+  </button>
 </template>
 
 <script>
 export default {
-  name : 'BaseButton',
+  name: "BaseButton",
 
-  props:{
-    color : {
+  props: {
+    color: {
       type: String,
       required: false,
     },
-    outlined : {
+    outlined: {
       type: Boolean,
       required: false,
     },
-
-    // disabled : {
-    //   type: Boolean,
-    //   required: false,
-    // }
-
-  }
-}
+    icon: {
+      type: String,
+      required: false,
+    },
+  },
+};
 </script>
-
-<style lang="scss" scope>
-
-// @import "bulma/sass/utilities/_all.sass";
-// @import "bulma/sass/elements/button.sass";
-
-// .is-primary{
-
-//   background: #0832DE!important;
-
-// }
-
-
-</style>

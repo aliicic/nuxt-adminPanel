@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: "static",
   head: {
     title: "admin-panel",
     htmlAttrs: {
@@ -23,7 +24,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["bulma/css/bulma.css", "static/mystyles.scss"],
+  css: ["bulma/css/bulma.css", "assets/mystyles.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

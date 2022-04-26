@@ -53,17 +53,12 @@ export default {
       handler() {
         let sidebar = document.getElementById("side").classList;
         if (this.showMenu) {
-          // sidebar.addclassList = '';
           sidebar.add("site-menubar-open");
         } else {
           sidebar.remove("site-menubar-open");
-          // sidebar.classList = 'site-menubar-open';
-          // sidebar.classList
+
         }
       },
-    },
-    $route() {
-      this.showMenu = true;
     },
   },
 };
