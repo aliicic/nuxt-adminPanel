@@ -2,7 +2,9 @@
   <div>
     <div class="container banner">
       <div class="column is-one-fifth">
-        <base-button color="primary "> View demo </base-button>
+        <base-button color="primary ">
+        <nuxt-link to="panel/general">View demo</nuxt-link>
+        </base-button>
       </div>
       <div class="column is-one-fifth">
         <base-button color="primary " outlined> Ui-Kit </base-button>

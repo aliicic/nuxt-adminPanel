@@ -5,6 +5,12 @@
 <script>
 export default {
 
+  head(){
+    return{
+      title : 'dashboard'
+    }
+  }
+
 }
 </script>
 

@@ -5,21 +5,20 @@
       <h2 class="title is-2">welcome</h2>
       <ul class="menu-item">
         <li>
-          <nuxt-link :to="{ name: 'blog-slug' }">
+          <NuxtLink to="general">
             <i class="fa-solid fa-gauge"></i>
-            Dashboard</nuxt-link
+            General</NuxtLink
           >
         </li>
         <li>
-          <nuxt-link :to="{ name: 'blog-slug' }">
+          <NuxtLink to="posts">
             <i class="fa-solid fa-paste"></i>
-            Post</nuxt-link
-          >
+            Post</NuxtLink>
         </li>
         <li>
-          <nuxt-link :to="{ name: 'blog-slug' }">
+          <NuxtLink to="users">
             <i class="fa-solid fa-user-group"></i>
-            Users</nuxt-link
+            Users</NuxtLink
           >
         </li>
       </ul>
@@ -109,6 +108,7 @@ export default {
       }
       a {
         color: unset;
+        display: block;
       }
     }
   }
@@ -120,10 +120,8 @@ export default {
   transform: translateX(0%) !important;
 }
 .content {
-  padding: 48px 256px 0px 0px;
-  flex: 1 1 auto;
-  max-width: 100%;
-  position: relative;
+  padding: 40px;
+  margin-left: auto;
 
   .nav-btn-open {
     display: none;
