@@ -17,6 +17,7 @@ import BaseButton from "~/components/elements-ui/BaseButton.vue";
 export default {
   components: { BaseButton },
   name: "IndexPage",
+  layout:'intro'
 };
 </script>
 <style>
