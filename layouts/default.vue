@@ -5,24 +5,27 @@
       <h2 class="title is-2">welcome</h2>
       <ul class="menu-item">
         <li>
-          <NuxtLink to="general">
+          <NuxtLink :to="{name:'panel-general'}">
             <i class="fa-solid fa-gauge"></i>
             General</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="posts">
+          <NuxtLink :to="{name : 'panel-posts'}">
             <i class="fa-solid fa-paste"></i>
             Post</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="users">
+          <NuxtLink :to="{name : 'panel-users'}">
             <i class="fa-solid fa-user-group"></i>
             Users</NuxtLink
           >
         </li>
       </ul>
     </div>
+    <!-- <div class="column is-one-fifth">
+
+    </div> -->
     <div class="column is-four-fifths content">
       <i
         class="fa-solid fa-bars nav-btn-open"
@@ -77,7 +80,7 @@ export default {
   max-height: calc(100% - 0px);
   transform: translateX(0%);
   transition: 0.4s transform;
-  width: 256px;
+  // width: 256px;
   z-index: 10;
   .title {
     font-size: 20px;
@@ -109,7 +112,9 @@ export default {
       a {
         color: unset;
         display: block;
+
       }
+
     }
   }
 }
@@ -121,7 +126,7 @@ export default {
 }
 .content {
   padding: 40px;
-  margin-left: auto;
+  margin-left:auto;
 
   .nav-btn-open {
     display: none;

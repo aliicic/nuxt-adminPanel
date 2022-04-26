@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h3 class="title is-3">posts</h3>
+    <div class="box">
     <table class="table">
       <thead>
         <tr>
@@ -17,12 +18,21 @@
       <tbody>
         <p v-if="$fetchState.pending">is loading</p>
         <p v-if="$fetchState.error">we have some errors</p>
+
         <tr v-for="item in posts" :key="item.id">
           <th>{{ item.id }}</th>
           <td>{{ item.title }}</td>
+          <td>
+            <nuxt-link   :to="{ name : 'panel-posts-id' , params : { id : item.id } }" style="text-decoration:none">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            </nuxt-link>
+          </td>
         </tr>
+
       </tbody>
     </table>
+
+    </div>
   </div>
 </template>
 

@@ -1,9 +1,8 @@
 <template>
 <button class="button is-fullwidth"
 :class ="{[`is-${color}`] : color ,
-['is-outlined'] : outlined,
-
-}"
+['is-outlined'] : outlined}"
+@click ="$emit('click',$event)"
 >
 <slot>click</slot>
 </button>

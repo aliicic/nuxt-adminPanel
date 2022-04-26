@@ -7,4 +7,10 @@ export default {
       console.log(e);
     }
   },
+  deleteUsers({commit}, payload) {
+    commit("DELETE_USER", payload);
+  },
+  addUsers({commit }, payload) {
+    commit("ADD_USER", payload);
+  },
 };
