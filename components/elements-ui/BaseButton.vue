@@ -8,7 +8,7 @@
       <i :class="`fas fa-${icon}`"></i>
     </span>
     <span>
-    <slot>click</slot>
+      <slot>click</slot>
     </span>
   </button>
 </template>
@@ -33,3 +33,4 @@ export default {
   },
 };
 </script>
+

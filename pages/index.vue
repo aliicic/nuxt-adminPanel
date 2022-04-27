@@ -2,16 +2,12 @@
   <div>
     <div class="container banner">
       <div class="column is-one-fifth">
-        <base-button class="blue-color" color="primary ">
-        <nuxt-link to="panel/general" style="color:white">View demo</nuxt-link>
-        </base-button>
+        <nuxt-link class="button is-primary" to="panel/general" style="color:white">View demo</nuxt-link>
       </div>
       <div class="column is-one-fifth">
-        <base-button color="primary " outlined>
-        <a href="#down">
+        <a href="#down" class="button is-primary is-outlined" color="primary " outlined>   
         Ui-Kit
         </a>
-        </base-button>
       </div>
     </div>
     <UiKit id="down"/>
@@ -34,5 +30,8 @@ export default {
   align-items: center;
 
 }
-
+a{
+  disabled:block;
+  width:200px;
+}
 </style>
